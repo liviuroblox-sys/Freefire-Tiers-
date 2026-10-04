@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+header {
+  background: #0b1d33;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #183a5f;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #7fa6c9;
+  margin-top: 5px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #1677ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d63d6;
+}
+
+.add-form {
+  background: #0d2037;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-form input,
+.add-form select {
+  background: #07111f;
+  color: white;
+  border: 1px solid #294967;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-card {
+  background: #0d2037;
+  border: 1px solid #183a5f;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.position {
+  font-size: 24px;
+  font-weight: bold;
+  color: #62a8ff;
+  width: 45px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #173554;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.uid,
+.region {
+  color: #7fa6c9;
+  font-size: 13px;
+}
+
+.tiers {
+  display: flex;
+  gap: 7px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.tier {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #152d48;
+  border: 2px solid #3477b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  .add-form input,
+  .add-form select,
+  .add-form button {
+    width: 100%;
+  }
+}
