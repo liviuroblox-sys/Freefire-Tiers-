@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Fire Tiers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🔥 FREE FIRE TIERS</div>
+    <div class="subtitle">Player Ranking</div>
+  </header>
+
+  <main>
+    <div class="topbar">
+      <h2>EU RANKING</h2>
+      <button id="addButton">＋ Spieler hinzufügen</button>
+    </div>
+
+    <div id="addForm" class="add-form hidden">
+      <input id="playerName" type="text" placeholder="Spielername">
+      <input id="playerUID" type="text" placeholder="UID">
+
+      <select id="playerRegion">
+        <option>EU</option>
+        <option>NA</option>
+        <option>BR</option>
+        <option>ASIA</option>
+      </select>
+
+      <select id="playerRank">
+        <option>Combat Master</option>
+        <option>Heroic</option>
+        <option>Grandmaster</option>
+        <option>Diamond</option>
+      </select>
+
+      <button id="savePlayer">Spieler speichern</button>
+    </div>
+
+    <section id="players"></section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
